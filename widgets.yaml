@@ -1,0 +1,76 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+
+- greeting:
+    text: ADLER
+
+- resources:
+    label: Resources
+    expanded: true
+    cpu: true
+    memory: true
+
+- glances:
+    # sudo apt-get install glances
+    # /usr/bin/glances -w in systemd unit
+    url: http://adler.local:61208
+    label: System
+    cpu: false
+    mem: false
+    expanded: true
+    target: _blank
+    diskUnits: bbytes
+    disk: 
+      - /
+
+- glances:
+    # sudo apt-get install glances
+    # /usr/bin/glances -w in systemd unit
+    url: http://adler.local:61208
+    label: Home
+    cpu: false
+    mem: false
+    expanded: true
+    target: _blank
+    diskUnits: bbytes
+    disk: 
+      - /home
+
+- glances:
+    # sudo apt-get install glances
+    # /usr/bin/glances -w in systemd unit
+    url: http://adler.local:61208
+    label: Media
+    cpu: false
+    mem: false
+    expanded: false
+    target: _blank
+    diskUnits: bbytes
+    disk: 
+      - /var/media
+
+
+      #- resources:
+      #    expanded: true
+      #    label: System
+      #    disk: 
+      #      - /mnt/ro_root
+
+      #- resources:
+      #    expanded: true
+      #    label: Home
+      #    disk: 
+      #- /mnt/ro_home
+
+        #- resources:
+        #    expanded: true
+        #    label: Media
+        #    disk: 
+        #      - /mnt/ro_media
+
+
+      #- speedtest:
+      #type: speedtest
+      #url: http://localhost:8085
+      #bitratePrecision: 3
