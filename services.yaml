@@ -67,7 +67,13 @@
           type: gamedig
           serverType: csgo # see https://github.com/gamedig/node-gamedig/blob/master/GAMES_LIST.md
           url: udp://adler.local:27015
-
+    - Minecraft:
+        icon: https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_Minecraft.png
+        widget:
+          type: gamedig
+          serverType: minecraft
+          url: udp://adler.local:25565
+          fields: ["players", "status", "ping"]
             #    - "Insurgency: Sandstorm":
             #        widget:
             #          type: gamedig
