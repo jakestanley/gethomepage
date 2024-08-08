@@ -37,10 +37,6 @@
         icon: portainer.png
         description: GUI for Docker containers
         href: http://adler.local:9001
-    - Syncthing:
-        icon: syncthing.png
-        description: Synchronise files between servers using a distributed network relay
-        href: http://adler.local:8384
     - Qbittorrent:
         icon: qbittorrent.png
         href: http://adler.local:8090
