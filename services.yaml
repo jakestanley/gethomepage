@@ -5,54 +5,54 @@
 - System Health:
     - Speedtest:
         icon: speedtest-tracker.png
-        href: http://{{HOMEPAGE_ADDRESS}}:8085/admin
+        href: http://{{HOMEPAGE_VAR_ADDRESS}}:8085/admin
         widget:
           type: speedtest
-          url: http://{{HOMEPAGE_ADDRESS}}:8085
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:8085
     - Processes:
         widget:
           type: glances
-          url: http://{{HOMEPAGE_ADDRESS}}:61208
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:61208
           metric: process
           chart: true
 #    - Memory:
 #        widget:
 #          type: glances
-#          url: http://{{HOMEPAGE_ADDRESS}}:61208
+#          url: http://{{HOMEPAGE_VAR_ADDRESS}}:61208
 #          metric: memory
 #          chart: true
     - Info:
         widget:
           type: glances
-          url: http://{{HOMEPAGE_ADDRESS}}:61208
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:61208
           metric: info
           chart: true
 
 - Services:
     - AMP:
         icon: https://pbs.twimg.com/profile_images/1261021896843411461/voBCBPHQ_400x400.jpg
-        href: http://{{HOMEPAGE_ADDRESS}}:8080
+        href: http://{{HOMEPAGE_VAR_ADDRESS}}:8080
         description: Application Management Panel
     - Portainer:
         icon: portainer.png
         description: GUI for Docker containers
-        href: http://{{HOMEPAGE_ADDRESS}}:9001
+        href: http://{{HOMEPAGE_VAR_ADDRESS}}:9001
     - Qbittorrent:
         icon: qbittorrent.png
-        href: http://{{HOMEPAGE_ADDRESS}}:8090
+        href: http://{{HOMEPAGE_VAR_ADDRESS}}:8090
         widget:
           type: qbittorrent
-          url: http://{{HOMEPAGE_ADDRESS}}:8090
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:8090
           username: admin
           password: {{HOMEPAGE_VAR_QBT_PASSWORD}}
     - Plex:
         icon: plex.png
-        href: http://{{HOMEPAGE_ADDRESS}}:32400/web
+        href: http://{{HOMEPAGE_VAR_ADDRESS}}:32400/web
         description: Watch movies and TV shows.
         server: localhost
         widget:
           type: plex
-          url: http://{{HOMEPAGE_ADDRESS}}:32400
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:32400
           key: {{HOMEPAGE_VAR_PLEX_KEY}}
           fields: ["streams", "movies", "tv"]
 
@@ -62,16 +62,16 @@
         widget:
           type: gamedig
           serverType: csgo # see https://github.com/gamedig/node-gamedig/blob/master/GAMES_LIST.md
-          url: udp://{{HOMEPAGE_ADDRESS}}:27015
+          url: udp://{{HOMEPAGE_VAR_ADDRESS}}:27015
     - Minecraft:
         icon: https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_Minecraft.png
         widget:
           type: gamedig
           serverType: minecraft
-          url: udp://{{HOMEPAGE_ADDRESS}}:25565
+          url: udp://{{HOMEPAGE_VAR_ADDRESS}}:25565
           fields: ["players", "status", "ping"]
             #    - "Insurgency: Sandstorm":
             #        widget:
             #          type: gamedig
             #          serverType: insurgencysandstorm
-            #          url: udp://{{HOMEPAGE_ADDRESS}}:27013
+            #          url: udp://{{HOMEPAGE_VAR_ADDRESS}}:27013
