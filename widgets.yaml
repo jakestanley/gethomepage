@@ -14,7 +14,7 @@
 - glances:
     # sudo apt-get install glances
     # /usr/bin/glances -w in systemd unit
-    url: http://adler.local:61208
+    url: http://{{HOMEPAGE_ADDRESS}}:61208
     label: System
     cpu: false
     mem: false
@@ -27,7 +27,7 @@
 - glances:
     # sudo apt-get install glances
     # /usr/bin/glances -w in systemd unit
-    url: http://adler.local:61208
+    url: http://{{HOMEPAGE_ADDRESS}}:61208
     label: Home
     cpu: false
     mem: false
@@ -40,7 +40,7 @@
 - glances:
     # sudo apt-get install glances
     # /usr/bin/glances -w in systemd unit
-    url: http://adler.local:61208
+    url: http://{{HOMEPAGE_ADDRESS}}:61208
     label: Media
     cpu: false
     mem: false
