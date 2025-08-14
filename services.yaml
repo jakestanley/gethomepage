@@ -55,6 +55,15 @@
           url: "http://{{HOMEPAGE_VAR_ADDRESS}}:32400"
           key: {{HOMEPAGE_VAR_PLEX_KEY}}
           fields: ["streams", "movies", "tv"]
+    - Jellyfin:
+        icon: jellyfin.png
+        href: http://{{HOMEPAGE_VAR_ADDRESS}}:8096/web/index.html
+        description: Manage videos
+        widget:
+          type: jellyfin
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:8096
+          key: {{HOMEPAGE_VAR_JELLYFIN_API_KEY}}
+          fields: ["movies"]
 
 - Game Servers:
     - CS2:
