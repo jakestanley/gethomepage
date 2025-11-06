@@ -8,8 +8,10 @@ providers:
   random: random
 
 layout:
-  System Health:
-  Services:
-  Game Servers:
+  Row 1:
+    header: false
+    style: row
+    columns: 3
   Control Panels:
     style: row
+    columns: 3

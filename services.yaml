@@ -2,7 +2,8 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- System Health:
+- Row 1:
+  - System Health:
     - Speedtest:
         icon: speedtest-tracker.png
         href: "http://{{HOMEPAGE_VAR_ADDRESS}}:8085/admin"
@@ -28,7 +29,7 @@
           metric: info
           chart: true
 
-- Services:
+  - Services:
     - Qbittorrent:
         icon: qbittorrent.png
         href: "http://{{HOMEPAGE_VAR_ADDRESS}}:8090"
@@ -67,8 +68,7 @@
               label: Status
               format: text
 
-
-- Game Servers:
+  - Game Servers:
     - CS2:
         icon: https://icon-library.com/images/counter-strike-icon/counter-strike-icon-24.jpg
         widget:
@@ -89,18 +89,19 @@
             #          url: "udp://{{HOMEPAGE_VAR_ADDRESS}}:27013"
             #
             #
+
 - Control Panels:
-    - AMP:
-        icon: https://pbs.twimg.com/profile_images/1261021896843411461/voBCBPHQ_400x400.jpg
-        href: "http://{{HOMEPAGE_VAR_ADDRESS}}:8080"
-        description: Application Management Panel
-    - Portainer:
-        icon: portainer.png
-        description: GUI for Docker containers
-        href: "http://{{HOMEPAGE_VAR_ADDRESS}}:9001"
-    - UpSnap:
-        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Go_gopher_favicon.svg/1280px-Go_gopher_favicon.svg.png
-        href: http://{{HOMEPAGE_VAR_ADDRESS}}:5001
-        description: Sleep and wake computers
+  - AMP:
+      icon: https://pbs.twimg.com/profile_images/1261021896843411461/voBCBPHQ_400x400.jpg
+      href: "http://{{HOMEPAGE_VAR_ADDRESS}}:8080"
+      description: Application Management Panel
+  - Portainer:
+      icon: portainer.png
+      description: GUI for Docker containers
+      href: "http://{{HOMEPAGE_VAR_ADDRESS}}:9001"
+  - UpSnap:
+      icon: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Go_gopher_favicon.svg/1280px-Go_gopher_favicon.svg.png
+      href: http://{{HOMEPAGE_VAR_ADDRESS}}:5001
+      description: Sleep and wake computers
 
 
