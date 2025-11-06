@@ -5,3 +5,11 @@ headerStyle: boxed
 providers:
   openweathermap: openweathermapapikey
   weatherapi: weatherapiapikey
+  random: random
+
+layout:
+  System Health:
+  Services:
+  Game Servers:
+  Control Panels:
+    style: row
