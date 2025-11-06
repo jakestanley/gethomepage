@@ -64,8 +64,19 @@
           url: http://{{HOMEPAGE_VAR_ADDRESS}}:8096
           key: {{HOMEPAGE_VAR_JELLYFIN_API_KEY}}
           fields: ["movies"]
-    - UpSnap:
-        href: http://{{HOMEPAGE_VAR_ADDRESS}}:5001
+            #    - UpSnap:
+            #        href: http://{{HOMEPAGE_VAR_ADDRESS}}:5001
+    - Bots:
+        widget:
+          type: customapi
+          url: http://{{HOMEPAGE_VAR_ADDRESS}}:5000/health
+          refreshInterval: 30000
+          method: GET
+          mappings:
+            - field: status
+              label: Status
+              format: text
+
 
 - Game Servers:
     - CS2:
